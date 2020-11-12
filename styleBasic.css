@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+@keyframes transitionIn{
+    from{
+        transform: translateY(-110%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionIn2{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 body{
     overflow-x: hidden;
 }
@@ -16,23 +36,41 @@ h2{
 }
 
 .topbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
     background-color: rgb(253, 157, 36);
+    text-align: center;
     height: 50px;
 }
 
-.topbar h1{
-    position: relative;
+.title{
+    cursor: default;
+    position: absolute;
     top: 7px;
-    left: 10%;
+    left: 15%;
+    letter-spacing: 4px;
     text-transform: uppercase;
     font-family: sans-serif;
-    letter-spacing: 4px;
+}
+
+.mail{
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.mail h1{
+    position: relative;
+    top: -3px;
 }
 
 .navbar{
-    position: relative;
-    left: 60%;
-    bottom: 37px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 div button{
@@ -56,19 +94,23 @@ div button:hover{
     background-color: white;
 }
 
+.wrapper{
+    margin-top: 50px;
+}
+
 .siteTitle, .box1, .box2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .siteTitle{
+    animation: transitionIn 1s;
     position: relative;
     top: 7px;
+    border-bottom: 1px solid rgb(94, 93, 93);
 }
 
-.border1{
-    height: 1px;
-    background-color: black;
-    opacity: 10%;
+.column1{
+    animation: transitionIn2 2s;
 }
 
 .box1, .box2{
@@ -78,50 +120,34 @@ div button:hover{
 }
 
 @media screen and (max-width:1050px){
-    .topbar h1{
-        position: relative;
-        top: 7px;
-        left: 10%;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        letter-spacing: 4px;
-    }
     
-    .navbar{
-        position: relative;
-        left: 40%;
-        bottom: 37px;
-    }
 }
 
 @media screen and (max-width:700px){
     .topbar{
-        height: fit-content;
-        text-align: center;
+        height: 96.7px;
     }
     
     .topbar h1{
         position: relative;
-        top: 7px;
         left: 0;
-        text-transform: uppercase;
-        font-family: sans-serif;
-        letter-spacing: 4px;
     }
     
     .navbar{
-        padding: 5px;
         position: relative;
+        margin-top: 10px;
         left: 0;
-        bottom: -5px;
     }
 
     .topbar button{
-        padding: 10px;
         width: 75px;
     }
 
+    .wrapper{
+        margin-top: 96.7px;
+    }
+
     .box1, .box2{
-        padding-right: 0;
+        padding-right: 10px;
     }
 }
