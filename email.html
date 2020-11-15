@@ -3,8 +3,9 @@
 <head>
 <title>Menu</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styleBasic.css">
-<link rel="stylesheet" href="styleFifth.css">
+<link rel="stylesheet" href="styleMaster.css">
+<link rel="stylesheet" href="styleTopbar.css">
+<link rel="stylesheet" href="styleEmail.css">
 </head>
 <body>
     <div class="wrapper">
@@ -22,12 +23,16 @@
     <div class="topbar">
         <h1 class="title">Title</h1>
         <div class="navbar">
-            <a href="index.html"><button>Menu</button></a>
-            <a href="second.html"><button>Solution</button></a>
-            <a href="third.html"><button>App</button></a>
-            <a href="fourth.html"><button>About Us</button></a>
+        <button class="burger"><div></div><div></div><div></div></button>
+            <ul class="navlinks">
+                <li><a class="close-a" href="#"><button>Close Menu</button></a></li>
+                <li><a class="home-a" href="index.html"><button>Home</button></a></li>
+                <li><a class="solution-a" href="solution.html"><button>Solution</button></a></li>
+                <li><a class="app-a" href="app.html"><button>App</button></a></li>
+                <li><a class="about-a" href="about.html"><button>About Us</button></a></li>
+                <li><a class="mail-a" href="email.html"><button>Sign Up</button></a></li>
+            </ul>
         </div>
-        <a class="amail" href="fifth.html"><button class="mail"><h1>@</h1></button></a>
     </div>
 </body>
 </html>
