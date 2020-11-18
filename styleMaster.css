@@ -4,43 +4,21 @@
     box-sizing: border-box;
 }
 
-@keyframes transitionIn{
+@keyframes transitionIn1{
     from{
-        transform: translateY(-110%);
+        opacity: 0;
     }
     to{
-        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 @keyframes transitionIn2{
     from{
-        opacity: 0;
-        transform: translateY(100%);
+        transform: translateX(100%);
     }
     to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes transitionIn3{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes transitionOut{
-    from{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to{
-        opacity: 0;
-        transform: translateY(-100%);
+        transform: translateX(0);
     }
 }
 
@@ -56,82 +34,36 @@ h2{
 }
 
 .wrapper{
-    margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+    border-top: 3px solid rgb(123, 160, 160);
+    margin-top: 100px;
+    width: 100%;
+    height: fit-content;
+    min-height: 600px;
+    background-color: ghostwhite;
 }
 
-.siteTitle, .box1, .box2{
+.siteTitle, .box1{
     font-family: Arial, Helvetica, sans-serif;
+    animation: transitionIn1 1s;
+    animation: transitionIn2 1s;
+}
+
+.box2{
+    animation: transitionIn1 2s;
 }
 
 .siteTitle{
-    animation: transitionIn 1s;
     position: relative;
-    top: 7px;
+    top: 10px;
     border-bottom: 1px solid rgb(94, 93, 93);
 }
 
 .box1{
-    padding: 15px;
-    padding-right: 50%;
-    animation: transitionIn2 2s;
-}
-
-.box2{
-    position: absolute;
-    right: 15%;
-    top: 150px;
-    width: 300px;
-    animation: transitionIn3 2s;
-}
-
-.imgGarbage1{
-    width: 300px;
-    margin-bottom: 50px;
-    border: 5px solid black;
-}
-
-.imgGarbage2{
-    width: 300px;
-    border: 5px solid black;
-}
-
-@media screen and (max-width:1050px){    
-    .wrapper{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-
-@media screen and (max-width:910px){
-    .box2{
-        right: 5%;
-    }
+    margin: 15px;
 }
 
 @media screen and (max-width:700px){ 
-    .wrapper{
-        margin-top: 50px;
-    }
-
     .box1, .box2{
-        padding-right: 0;
         margin-right: 5%;
-    }
-
-    .box2{
-        position: static;
-        animation: transitionIn2 2s;
-    }
-
-    .box2 img{
-        margin-left: 5%;
-    }
-}
-
-@media screen and (max-width:350px){
-    .box2 img{
-        margin-left: 0;
     }
 }

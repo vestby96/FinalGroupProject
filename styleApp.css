@@ -5,3 +5,15 @@
 .app-a button:hover{
     background-color: white;
 }
+
+.box2{
+    height: 450px;
+}
+
+.app-login-page{
+    width: 150px;
+    position: absolute;
+    top: 500px;
+    right: 400px;
+    
+}

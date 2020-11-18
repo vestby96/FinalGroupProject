@@ -3,5 +3,29 @@
 }
 
 .home-a button:hover{
-    background-color: white;
+    background-color: rgb(238, 250, 255);
+}
+
+.box1{
+    margin-top: 30px;
+    margin: 5%;
+    margin-right: 50%;
+}
+
+.box2{
+    margin: 5%;
+    width: 300px;
+}
+
+.imgGarbage1{
+    width: 300px;
+    margin-bottom: 50px;
+    border: 10px solid aliceblue;
+    border-radius: 5px;
+}
+
+.imgGarbage2{
+    width: 300px;
+    border: 10px solid aliceblue;
+    border-radius: 5px;
 }
