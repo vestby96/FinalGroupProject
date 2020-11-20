@@ -1,31 +1,109 @@
 .home-a button{
-    background-color: white;
+    background-color: ghostwhite;
 }
 
 .home-a button:hover{
     background-color: rgb(238, 250, 255);
 }
 
+.sectionTitle{
+    padding: 1%;
+    text-align: center;
+    height: 15%;
+    animation: transitionIn1 1s;
+}
+
 .box1{
-    margin-top: 30px;
-    margin: 5%;
-    margin-right: 50%;
+    background-color: rgb(136, 136, 136);
+    height: 75%;
+    width: 100%;
+    animation: transitionIn2 2s;
+    position: relative;
+}
+
+.app-presentation{
+    background-color: red;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+}
+
+.login-app-position{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.map-app-position{
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+}
+
+.menu-app-position{
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+}
+
+.box1-right{
+    padding: 10%;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.box1-right h2{
+    color: white;
+}
+
+.box1-right p{
+    color: white;
 }
 
 .box2{
-    margin: 5%;
-    width: 300px;
+    padding: 20px;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: transitionIn2 2s;
 }
 
-.imgGarbage1{
-    width: 300px;
-    margin-bottom: 50px;
-    border: 10px solid aliceblue;
-    border-radius: 5px;
+.box2 a{
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    top: 7px;
+    border-radius: 3px;
+    transition: all ease 0.5s;
 }
 
-.imgGarbage2{
-    width: 300px;
-    border: 10px solid aliceblue;
-    border-radius: 5px;
+.arrow-down-left{
+    height: 40px;
+    position: relative;
+    top: 18px;
+}
+
+.arrow-down-right{
+    transform: scaleX(-1);
+    height: 40px;
+    position: relative;
+    top: 18px;
+}
+
+.box2 a:hover{
+    padding: 25px;
+}
+
+.box3{
+    background-color: rgb(151, 191, 207);
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: transitionIn2 2s;
 }

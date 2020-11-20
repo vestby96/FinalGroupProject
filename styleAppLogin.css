@@ -1,0 +1,163 @@
+.login-app-position p, .login-app-position h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.border{
+    background-color: black;
+    width: 200px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.screen{
+    background-color: aliceblue;
+    width: 190px;
+    height: 380px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    border-radius: 20px;
+}
+
+.login-screen-fill{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+}
+
+.speaker{
+    background-color: black;
+    width: 100px;
+    height: 23px;
+    position: absolute;
+    top: -8px;
+    left: 25%;
+    border-radius: 10px;
+}
+
+.screen-top{
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 0;
+}
+
+.clock{
+    position: absolute;
+    top: 0;
+    left: 6%;
+}
+
+.clock p{
+    font-size: 12px;
+}
+
+.signal{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 27px;
+    top: 2px;
+    background-image: url(img/wifi-icon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.battery{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 9px;
+    top: 2px;
+    background-image: url(img/battery-icon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.login{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+.login p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    color: rgb(40, 61, 46);
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.welcome{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+}
+
+.welcome p{
+    font-size: 20px;
+    color: black;
+}
+
+.name-bar{
+    background-color: white;
+    height: 30px;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 175px;
+    border-radius: 15px;
+}
+
+.name-bar p{
+    font-size: 13px;
+    color: grey;
+    position: absolute;
+    left: 13px;
+    top: 5px;
+}
+
+.next-button{
+    background-color: black;
+    height: 30px;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    bottom: 100px;
+    border-radius: 15px;
+}
+
+.next-button p{
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 14px;
+}
+
+.sign-up{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.privacy{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+}
+
+.sign-up p, .privacy p{
+    font-size: 12px;
+    color: black;
+    text-decoration: underline;
+}

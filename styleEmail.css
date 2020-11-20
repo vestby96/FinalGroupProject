@@ -1,7 +1,7 @@
 .email-a button{
-    background-color: white;
+    background-color: ghostwhite;
 }
 
 .email-a button:hover{
-    background-color: white;
+    background-color: rgb(238, 250, 255);
 }

@@ -2,28 +2,23 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 10vh;
     background-color: rgb(151, 191, 207);
-    border-bottom: 3px solid rgb(123, 160, 160);
 }
 
 .title{
     text-align: center;
     position: relative;
     left: 15%;
-    margin: 25px;
+    top: 1.5vh;
     width: fit-content;
     letter-spacing: 4px;
-    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
 }
 
 .title a{
     text-decoration: none;
-    color: black;
-}
-
-.title h1{
-    font-size: 40px;
 }
 
 .title-button{
@@ -34,19 +29,20 @@ nav{
     transition: 1s;
 }
 
-.title-button::after{
+.title a::after{
     content: "";
     display: block;
     width: 0;
     height: 5px;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(38, 44, 46);
     position: relative;
     right: 25%;
+    bottom: 5px;
     transition: width 0.5s;
 }
 
-.title-button:hover::after{
+.title a:hover::after{
     width: 150%;
     transition: width 0.5s;
 }
@@ -62,9 +58,8 @@ nav{
 
 .navlinks button{
     width: 100px;
-    height: 100px;
+    height: 10vh;
     background: none;
-    color: black;
     border: none;
     cursor: pointer;
 }
@@ -75,7 +70,7 @@ nav{
     width: 0;
     height: 3px;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(38, 44, 46);
     position: relative;
     left: 10%;
     transition: width 0.3s;
@@ -87,9 +82,8 @@ nav{
 }
 
 .navlinks button:hover{
-    transform: translateY(-10px);
     background-color: rgb(125, 160, 173);
-    height: 110px;
+    height: 11vh;
     transition: all ease 0.5s;
 }
 
@@ -135,9 +129,10 @@ nav{
     cursor: pointer;
     background: none;
     border: none;
+    border-radius: 5px;
     position: absolute;
     right: 10%;
-    top: 35px;
+    top: 2.8vh;
     transition: all ease 1s;
     transform: translateX(2000%);
 }
@@ -146,18 +141,22 @@ nav{
     width: 27px;
     height: 4px;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(38, 44, 46);
     margin: 5px;
+}
+
+.burger:hover{
+    background-color: rgb(125, 160, 173);
 }
 
 .close-menu{
     display: none;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1050px){
     nav{
         text-align: center;
-        position: absolute;
+        position: fixed;
     }
     
     .burger{
@@ -168,32 +167,34 @@ nav{
         display: block;
     }
 
-    .title{
-        position: static;
-        margin-left: 10%;
-    }
-
     .navlinks{
         text-align: center;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 600px;
-        margin-top: 100px;
-        flex-direction: column;
+        height: 90vh;
+        margin-top: 10vh;
         background-color: rgb(151, 191, 207);
         transform: translateX(100%);
     }
 
     .navlinks button{
         width: 100%;
-        height: 100px;
+        height: 15vh;
         position: static;
     }
 
+    .navlinks button::after{
+        left: 40%;
+    }
+    
+    .navlinks button:hover::after{
+        width: 20%;
+    }
+
     .navlinks button:hover{
-        height: 100px;
+        height: 16vh;
     }
 
     .burger:focus + .navlinks{

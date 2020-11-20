@@ -1,7 +1,70 @@
 .solution-a button{
-    background-color: white;
+    background-color: ghostwhite;
 }
 
 .solution-a button:hover{
-    background-color: white;
+    background-color: rgb(238, 250, 255);
+}
+
+.sectionTitle{
+    padding: 1%;
+    text-align: center;
+    height: 15%;
+    animation: transitionIn1 1s;
+}
+
+.box1{
+    padding: 1% 10% 1% 10% ;
+    background-color: rgb(205, 224, 231);
+    color: rgb(34, 34, 34);
+    height: 75%;
+    width: 100%;
+    animation: transitionIn2 2s;
+    position: relative;
+}
+
+.box2{
+    padding: 20px;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: transitionIn2 2s;
+}
+
+.box2 a{
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    top: 7px;
+    border-radius: 3px;
+    transition: all ease 0.5s;
+}
+
+.arrow-down-left{
+    height: 40px;
+    position: relative;
+    top: 18px;
+}
+
+.arrow-down-right{
+    transform: scaleX(-1);
+    height: 40px;
+    position: relative;
+    top: 18px;
+}
+
+.box2 a:hover{
+    padding: 25px;
+}
+
+.box3{
+    padding: 1% 10% 1% 10% ;
+    background-color: rgb(205, 224, 231);
+    color: rgb(34, 34, 34);
+    height: 75%;
+    width: 100%;
+    animation: transitionIn2 2s;
+    position: relative;
 }

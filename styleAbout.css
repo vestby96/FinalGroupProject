@@ -1,7 +1,7 @@
 .about-a button{
-    background-color: white;
+    background-color: ghostwhite;
 }
 
 .about-a button:hover{
-    background-color: white;
+    background-color: rgb(238, 250, 255);
 }
