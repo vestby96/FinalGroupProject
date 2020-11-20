@@ -28,32 +28,52 @@
     position: relative;
 }
 
-.box1-app{
+.box1-login-app{
     height: 100%;
     width: 30%;
     position: absolute;
     right: 0;
     top: 0;
+    background-image: url(img/login-app-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
-.login-app-position{
-    position: relative;
-    top: 20px;
+.box1-menu-app{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(img/menu-app-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
-.menu-app-position{
-    position: relative;
-    top: 20px;
+.box1-map-app{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(img/map-app-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
-.map-app-position{
-    position: relative;
-    top: 20px;
-}
-
-.watch-app-position{
-    position: relative;
-    top: 150px;
+.box1-watch-app{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(img/watch-app-img.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
 .box2{
